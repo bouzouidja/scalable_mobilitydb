@@ -4,7 +4,7 @@ FROM postgres:13.3
 ARG VERSION=10.1.0
 LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.name="Citus" \
-      org.label-schema.description="Scalable PostgreSQL for multi-tenant and real-time workloads" \
+      org.label-schema.description="Scalable MobilityDB" \
       org.label-schema.url="https://www.citusdata.com" \
       org.label-schema.vcs-url="https://github.com/citusdata/citus" \
       org.label-schema.vendor="Citus Data, Inc." \
