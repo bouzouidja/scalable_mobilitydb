@@ -45,7 +45,7 @@ RUN apt-get update \
        postgresql-13-postgis-$POSTGIS_VERSION \
        postgresql-13-postgis-$POSTGIS_VERSION-scripts \
     && rm -rf /var/lib/apt/lists/*
-    && curl -s https://install.citusdata.com/community/deb.sh | bash \
+RUN curl -s https://install.citusdata.com/community/deb.sh | bash \
     && apt-get install -y postgresql-$PG_MAJOR-citus-10.1.=$CITUS_VERSION \
                           postgresql-$PG_MAJOR-hll=2.15.citus-1 \
                           postgresql-$PG_MAJOR-topn=2.3.1 \
