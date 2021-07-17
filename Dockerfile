@@ -12,6 +12,10 @@ LABEL maintainer="Citus Data https://citusdata.com" \
       org.label-schema.schema-version="1.0"
 
 ENV CITUS_VERSION ${VERSION}.citus-1
+ENV MOBILITYDB_GIT_HASH bce48f2ec6dffda1d19dd7fd8de191b2a4866d8b
+ENV POSTGRES_DBNAME=mobilitydb
+ENV POSTGRES_USER=docker 
+ENV POSTGRES_PASSWORD=docker
 ENV POSTGIS_VERSION 2.5
 
 # Fix the Release file expired problem
